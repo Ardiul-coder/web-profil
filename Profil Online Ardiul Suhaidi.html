@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Profil — Ardiul Suhaidi</title>
+<style>
+:root{
+--bg:#0f172a;
+--card:#1e293b;
+--text:#f1f5f9;
+--muted:#94a3b8;
+--accent:#38bdf8;
+--accent2:#a78bfa;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{position:relative;height:260px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;overflow:hidden}
+header::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.3)}
+.profile-pic{width:150px;height:150px;border-radius:50%;border:5px solid #fff;z-index:10;object-fit:cover}
+.name-block{position:absolute;bottom:20px;text-align:center;z-index:10;color:#fff}
+.name-block h1{font-size:1.8rem;margin-bottom:6px}
+.name-block p{font-size:1rem;color:#e2e8f0}
+
+
+main{max-width:1000px;margin:-70px auto 40px;padding:0 20px}
+.card{background:var(--card);padding:28px;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,0.4);margin-bottom:24px;transition:transform .3s}
+.card:hover{transform:translateY(-4px)}
+h2{margin-bottom:14px;font-size:1.3rem;color:var(--accent)}
+p{margin-bottom:14px;color:var(--muted)}
+.timeline{position:relative;padding-left:20px}
+.timeline::before{content:"";position:absolute;top:0;left:6px;width:2px;height:100%;background:var(--accent2)}
+.timeline-item{margin-bottom:18px;position:relative}
+.timeline-item::before{content:"";position:absolute;left:-2px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid #fff}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;padding:8px 14px;border-radius:30px;font-size:.9rem;box-shadow:0 2px 6px rgba(0,0,0,.3)}
+
+
+.contact a{display:inline-block;margin:6px 0;color:var(--accent);text-decoration:none;transition:color .3s}
+.contact a:hover{color:var(--accent2)}
+footer{text-align:center;color:var(--muted);padding:20px;font-size:.9rem;border-top:1px solid #1e293b}
+
+
+@media(max-width:700px){
+header{height:220px}
+.profile-pic{width:110px;height:110px}
+.name-block h1{font-size:1.4rem}
+
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<!-- Ganti src dengan path foto Anda -->
+<img src="c:\Users\rajha\Downloads\WhatsApp Image 2025-09-22 at 2.56.27 AM.jpeg" alt="Foto [Ardiul Suhaidi]" class="profile-pic" />
+<div class="name-block">
+<h1>Ardiul Suhaidi</h1>
+<p>NIM: 2205903040062</p>
+</div>
+</header>
+
+
+<main>
+<section class="card">
+<h2>Tentang Saya</h2>
+<p>Halo! Saya <strong>Ardiul Suhaidi</strong>, saya berumur 20 tahun,  seorang mahasiswa Teknologi Informasi di Universitas Teuku Umar dengan minat besar pada Sistem Informasi. Saya berumur 20 tahun, merupakan anak pertama dari 3 bersaudara. Saat ini saya sedang menempuh semester 7.</p>
+</section>
+
+
+<section class="card">
+<h2>Riwayat Pendidikan</h2>
+<div class="timeline">
+<div class="timeline-item">
+<strong>/t[2022] – [2025]</strong><br />Universitas Teuku Umar — Teknologi Informasi
+</div>
+<div class="timeline-item">
+<strong>/t[2019] – [2022]</strong><br />[SMAN 1 Tadu Raya]
+</div>
+</div>
+</section>
+
+
+<section class="card">
+<h2>Keterampilan</h2>
+<div class="skills">
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">English</span>
+<span class="skill">MOBA Games</span>
+<span class="skill">Akoustik/Classic</span>
+</div>
+</section>
+
+
+<section class="card contact">
+<h2>Kontak</h2>
+<div><strong>Email:</strong> <a href="ardiulsuhaidi@gmail.com">ardiulsuhaidi@gmail.com</a></div>
+<div><strong>Instagram:</strong> <a href="https://www.instagram.com/ardi_ul530?igsh=Z3Ewd3hzYTNhdXR5" target="_blank">ardi_ul530</a></div>
+<div><strong>GitHub:</strong> <a href="https://github.com/Ardiul-coder" target="_blank">github.com/Ardiul-coder</a></div>
+</section>
+</main>
+
+
+<footer>
+&copy; <span id="year">2025</span> [Ardiul Suhaidi]. Semua Hak Dilindungi.
+</footer>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
